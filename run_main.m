@@ -2,9 +2,9 @@ close all;
 clear;
 clc;
 
-addpath('../data/');
-addpath('../utility/');
-addpath('ssc_files');
+addpath('data/');
+addpath('utility/');
+addpath('ssc_files/');
 
 
 betas = [1, 2];
