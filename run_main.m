@@ -7,8 +7,10 @@ addpath('utility/');
 addpath('ssc_files/');
 
 
-betas = [1, 2];
-finetuning_params = [0, 1]; %enable_finetuing: 0 disable, 1 enable
+%betas = [1, 2];
+%finetuning_params = [0, 1]; %enable_finetuing: 0 disable, 1 enable
+betas = [1];
+finetuning_params = [0];
 dim = 0;
 
 % 1 Network Intrusion; 2 Keystroke; 3 Forest Cover; 4 COIL-100; 5 USPS
@@ -27,7 +29,8 @@ switch data_index
         num_windows = 50;
 
     case 2
-        lambdas =[10, 20, 50, 100, 200, 500];
+        %lambdas =[10, 20, 50, 100, 200, 500];
+        lambdas =[100];
         load('key_data.mat');
         filename = "key";
         hsrc_data = key_data;
